@@ -1,0 +1,367 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(45, 45, 45);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    height: 70px;
+    padding: 20px 30px;
+    color: white;
+    background-color: rgb(45, 45, 45);
+}
+nav .left-nav h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+nav .right-nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav .right-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Hero */
+.hero-container{
+    color: white;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    /* background-image: url("https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+
+}
+.hero-container .left-hero{
+    width: 50%;
+    margin-left: 40px;
+}
+.hero-container .left-hero h1.my_name{
+    font-size: 100px;
+    font-weight: 400;
+}
+.hero-container .left-hero .company{
+    font-weight: 400;
+}
+.hero-container .left-hero h3.position{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.hero-container .left-hero p.description{
+    font-size: 25px;
+}
+.hero-container .left-hero .btn-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.hero-container .left-hero .btn-container a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.hero-container .left-hero .btn-container .discord_link{
+    background-color: rgb(210, 226, 240);
+    color: black;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.hero-container .left-hero .btn-container .discord_link .fa-discord{
+    color: blue;
+}
+.hero-container .left-hero .btn-container .discord_link span{
+    font-weight: bold;
+}
+.hero-container .left-hero .btn-container .schedule_link{
+    background-color: rgb(212, 225, 236);
+    color: black;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.hero-container .left-hero .btn-container .schedule_link .fa-calendar-days{
+    color: rgb(200, 71, 71);
+}
+
+.hero-container .right-hero{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+}
+.hero-container .right-hero img{
+    width: 100%;
+}
+
+/* about me */
+#About-Me{
+    background-color: black;
+    display: inline-flex;
+    align-items: center;
+    padding: 100px 30px 100px 30px;
+}
+
+#About-Me .About-left{
+    width: 50%;
+}
+#About-Me .About-left h1{
+    font-size: 5rem;
+    color: white;
+}
+
+#About-Me .About-right{
+    flex: 1;
+}
+#About-Me .About-right p{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: rgb(207, 207, 207);
+}
+#About-Me .About-right a{
+    text-decoration: none;
+    background-color: rgb(194, 211, 226);
+    padding: 15px 30px;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.article-1{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    background-color: black;
+}
+/* .article-1 .overlay-1{
+    position: absolute;
+    background-color: rgb(45, 45, 45);
+    left: 20px;
+    right: 20px;
+    bottom: 80px;
+    top: 45%;
+} */
+
+.article-1 .img-container{
+    z-index:10;
+}
+.article-1 .img-container img{
+    width: 45rem;
+}
+.article-1 .right-container{
+    flex: 1;
+    margin-left: 50px;
+    margin-top: 70px;
+    z-index:10;
+}
+.article-1 .right-container h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+}
+.article-1 .right-container p{
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 200;
+    color: rgb(207, 207, 207);
+}
+
+.article-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    background-color: black;
+}
+.article-2 .title{
+    font-size: 5rem;
+    margin-top: 90px;
+    color:white;
+    margin-bottom: 100px;
+}
+.article-2 .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.article-2 .card-container .card{
+    width: 400px;
+}
+
+.article-2 .card-container .card h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 20px 0;
+    color: white;
+}
+.article-2 .card-container .card p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(207, 207, 207);
+}
+.article-2 .card-container .card img{
+    width: 370px;
+}
+
+/* works */
+#works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 30px 0 30px;
+    color: white;
+    background-color: black;
+}
+#works h1{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+#works .view-btn{
+    text-decoration: none;
+    background-color: rgb(194, 211, 226);
+    padding: 15px 50px;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+}
+#works .work-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#works .work-container .work{
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+#works .work-container .work a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 200;
+}
+#works .work-container .work a span{
+    margin-left: 10px;
+}
+#works .work-container .work img{
+    width: 400px;
+}
+
+
+/* contact */
+#contact{
+    color: white; 
+    padding: 130px 30px 100px 30px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+#contact .left-contact{
+    flex: 1;
+}
+#contact .left-contact h1{
+    font-size: 80px;
+}
+#contact .left-contact p{
+    font-size: 30px;
+    margin: 50px 20px;
+    color: rgb(197, 196, 196);
+}
+#contact .left-contact .other-contacts span{
+    margin-right: 20px;
+}
+#contact .right-contact{
+    width: 50%;
+}
+#contact .right-contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#contact .right-contact form input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+#contact .right-contact form input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+#contact .right-contact form input:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid rgb(162, 213, 255);
+}
+#contact .right-contact form button{
+    text-decoration: none;
+    background-color: rgb(194, 211, 226);
+    padding: 10px 40px;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* footer */
+footer{
+    color: white;
+    padding: 0 30px;
+    background-color: black;
+}
+footer .divider{
+    border: 1px solid white;
+    width: 100%;
+    height: .1px;
+    margin-bottom: 50px;
+}
+footer .footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+footer .footer-container .copyright p{
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(197, 196, 196);
+}
+footer .footer-container .soc-accounts{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(197, 196, 196);
+}
